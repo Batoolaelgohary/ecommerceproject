@@ -27,7 +27,7 @@ export default function CreateOrder({children}) {
       let data=await payOnline(id,values)
     if(data.status=== 'success'){
       toast.success('Your Order is placed successfully')
-      window.location.href=data.session.url
+      window.location.href='https://batoolaelgohary.github.io/ecommerceproject/#/Products'
       setLoadingProduct(true)
       setCounter(0)
     }
